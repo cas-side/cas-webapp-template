@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
+
+    <title>北明数科综合管理平台</title>
+    <meta content="beiming,beiming报备管理" name="keywords">
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet" th:href="@{/css/bootstrap.min.css}"/>
+    <link href="../static/css/font-awesome.min.css" rel="stylesheet" th:href="@{/css/font-awesome.min.css}"/>
+    <link href="../static/css/style.css" rel="stylesheet" th:href="@{/css/style.css}"/>
+    <link href="../static/css/login.min.css" rel="stylesheet" th:href="@{/css/login.min.css}"/>
+    <link href="../static/beiming/css/ra-ui.css" rel="stylesheet" th:href="@{/beiming/css/ra-ui.css?v=3.3.0}"/>
+    <style type="text/css">label.error {
+        position: inherit;
+    }</style>
+    <script>
+        if (window.top !== window.self) {
+            window.top.location = window.location
+        }
+    </script>
+</head>
+
+<body class="signin">
+
+<div class="signinpanel">
+    <div class="row">
+        <div class="col-sm-7">
+            <div class="signin-info">
+                <p>欢迎使用</p>
+                <h1><strong>北明数科</strong>综合管理平台</h1>
+            </div>
+        </div>
+        <div th:fragment="loginform" class="col-sm-5">
+            <form id="fm1" th:object="${credential}" action="login">
+                <div class="alert alert-danger" th:if="${#fields.hasAnyErrors()}">
+                    <span th:each="err : ${#fields.errors('*')}" th:utext="${err}">Example error</span>
+                </div>
+                <h4 class="no-margins">登录：</h4>
+                <input class="form-control uname" name="username" placeholder="用户名/手机号" type="text" value=""/>
+                <input class="form-control pword" name="password" placeholder="密码" type="password" value=""/>
+                <div class="checkbox-custom" th:if="${rememberMeAuthenticationEnabled}">
+                    <input id="rememberMe" checked="checked"  name="rememberMe" type="checkbox"> <label for="rememberMe">记住我</label>
+                </div>
+                <button type="submit" class="btn btn-success btn-block" data-loading="正在验证登录，请稍后..." id="btnSubmit">登录</button>
+            </form>
+        </div>
+    </div>
+    <div class="signup-footer">
+        <div class="pull-left">
+            &copy; 2019 All Rights Reserved.<br>
+
+            <a href="" rel="nofollow" target="_blank"></a><br>
+        </div>
+    </div>
+</div>
+<script th:inline="javascript"> var ctx = [[@{/}]]; var captchaType = [[${captchaType}]]; </script>
+<!-- 全局js -->
+<script src="../static/js/jquery.min.js" th:src="@{/js/jquery.min.js}"></script>
+<script src="../static/js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>
+<!-- 验证插件 -->
+<script src="../static/ajax/libs/validate/jquery.validate.min.js"
+        th:src="@{/ajax/libs/validate/jquery.validate.min.js}"></script>
+<script src="../static/ajax/libs/validate/messages_zh.min.js"
+        th:src="@{/ajax/libs/validate/messages_zh.min.js}"></script>
+<script src="../static/ajax/libs/layer/layer.min.js" th:src="@{/ajax/libs/layer/layer.min.js}"></script>
+<script src="../static/ajax/libs/blockUI/jquery.blockUI.js" th:src="@{/ajax/libs/blockUI/jquery.blockUI.js}"></script>
+<script src="../static/beiming/js/ry-ui.js" th:src="@{/beiming/js/ry-ui.js?v=3.3.0}"></script>
+<script type="application/javascript">
+    var i = [[#{screen.welcome.button.loginwip}]];
+    $( document ).ready(function() {
+        $("#fm1").submit(function () {
+            $(":submit").attr("disabled", true);
+            $(":submit").attr("value", i);
+            console.log(i);
+            return true;
+        });
+    });
+</script>
+</body>
+</html>

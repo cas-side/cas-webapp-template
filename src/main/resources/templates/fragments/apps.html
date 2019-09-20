@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title>Apps</title>
+</head>
+<body>
+<style th:fragment="apps_css">
+    .con {
+        width: 100%;
+        background: #FBFBFD;
+    }
+    .con-body {
+        width: 100%;
+        padding: 20px 0;
+        box-sizing: border-box;
+    }
+
+    #con-body-list {
+        list-style: none;
+        overflow: hidden;
+        margin-left: -20px;
+    }
+
+    #con-body-list li {
+        width: 280px;
+        height: 130px;
+        margin: 20px 20px 0 0;
+        /*box-shadow: 0px 2px 2px #888888;*/
+        background: #fff;
+        border-radius: 6px;
+        float: left;
+        background:rgba(255,255,255,1);
+        border:1px solid rgba(234, 237, 243, 1);
+        box-shadow:0px 1px 3px 0px rgba(0, 0, 0, 0.04);
+        border-radius:4px;
+    }
+</style>
+<div th:fragment="apps" class="con">
+        <div class="con-body">
+            <ul id="con-body-list">
+                <li>
+                    <a href="/clients/z" target="_blank">
+                        <div>
+                            <img src="/img/z.jpg" style="width: 40px;margin: 20px">
+                            <p style="display: inline;font-size: 18px;font-weight: bold;color: #296DDB">综合管理平台</p>
+                            <p style="color: #979797;margin-left: 20px;font-weight: 500">项目报备、工时报备</p>
+                        </div>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="/clients/jira" target="_blank">
+                        <div>
+                            <img src="/img/jira.jpg" style="width: 40px;margin: 20px">
+                            <p style="display: inline;font-size: 18px;font-weight: bold;color: #296DDB">JIRA</p>
+                            <p style="color: #979797;margin-left: 20px;font-weight: 500">项目与问题跟踪工具</p>
+                        </div>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="/clients/pan" target="_blank">
+                        <div>
+                            <img src="/img/pan.jpg" style="width: 40px;margin: 20px">
+                            <p style="display: inline;font-size: 18px;font-weight: bold;color: #296DDB">网盘</p>
+                            <p style="color: #979797;margin-left: 20px;font-weight: 500">北明数科企业网盘</p>
+                        </div>
+                    </a>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

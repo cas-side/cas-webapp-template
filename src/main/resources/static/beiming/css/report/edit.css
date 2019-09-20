@@ -1,0 +1,103 @@
+.head-btn {
+    margin-bottom: 20px;
+}
+
+.head-btn {
+    float: right;
+    margin-right: 10px;
+    overflow: hidden;
+    z-index: 9999;
+    position: fixed;
+    right: 10px;
+    top: 6px;
+}
+.tab-report{
+    top: 1px;
+}
+
+.head-title tr:nth-of-type(2) span {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+/*表格样式 start*/
+.table-report{
+    /*border-color: black;*/
+    border-collapse:collapse;
+    border:1px solid black;
+}
+.table-report-print{
+    height: 1086px;
+    width: 756px;
+}
+.table-report{
+    border:1px solid black;
+}
+.table-head-title {
+    border-color: black;
+    font-size: 2rem;
+    vertical-align:middle;
+    text-align:center;
+    color: black;
+    height: 50px;
+}
+.table-td{
+    font-size: 1.5rem;
+}
+
+.table-td-key{
+    vertical-align:middle;
+    border-color: black;
+    color: black;
+    background: #DAE9FF;
+}
+.table-td-val{
+    vertical-align:middle;
+    border-color: black;
+}
+.table-details{
+    height: 42px;
+}
+.table-details-type2{
+    /*height: 30px;*/
+}
+/*表格样式 end*/
+
+.head-btn span {
+    display: inline-block;
+    background: rgb(35, 156, 212);
+    color: #fff;
+    border-radius: 6px;
+    width: 9rem;
+    margin-right: 1rem;
+    height: 3rem;
+    font-size: 1.4rem;
+    line-height: 2.6;
+    text-align: center;
+    float: right;
+}
+
+.my-row *, .my-row *:before, .my-row *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.show {
+    float: right;
+    margin-left: 5px;
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+/*chrome下进行页眉页脚消除 使用css 样式进行消除*/
+/*测试ie11,chrome,firefox,edge 可消除页眉页脚*/
+@media print{
+    @page{
+        margin:0;
+        /*控制是使用a4还是使用其它纸张规格*/
+        size:auto;
+        width: 756px;
+    }
+}

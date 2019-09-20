@@ -1,0 +1,92 @@
+.mustChoose{
+    position:relative;
+}
+.mustChoose:before{
+    color: #F00;
+    content: "*";
+    font-size: 2rem;
+    vertical-align: middle;
+    position: absolute;
+    right: -10px;
+}
+label span{
+    position: relative;
+}
+.footBtn{
+    position: fixed;
+    bottom: 3px;
+    margin-left: 80%;
+}
+.btn-background{
+    width: 100%;
+    height: 8%;
+    position: fixed;
+    bottom: 0px;
+}
+.padding-zero{
+    padding:0 !important;
+}
+.details{
+    height: 80px !important;
+    padding: 0 !important;
+}
+input{
+    border:none!important;
+}
+/*表格样式 start*/
+.table-report{
+    border-collapse:collapse;
+    border:1px solid rgba(0, 0, 0, 0.99);
+}
+.table-report-print{
+    height: 1086px;
+    width: 756px;
+}
+.table-report{
+    border:1px solid rgba(0, 0, 0, 0.99);
+}
+.table-head-title {
+    border-color: rgba(0, 0, 0, 0.99);
+    font-size: 2rem;
+    vertical-align:middle;
+    text-align:center;
+    /*color: #e4b9b9;*/
+    height: 50px;
+}
+.table-td{
+    font-size: 1.5rem;
+}
+
+.table-td-key{
+    vertical-align:middle;
+    border-color: rgba(0, 0, 0, 0.99);
+    /*color: #999999;*/
+    background: #DAE9FF;
+}
+.table-td-val{
+    vertical-align:middle;
+    border-color: rgba(0, 0, 0, 0.99);
+    /*color: #333333;*/
+}
+.table-td-val input{
+    /*background-color: #EDF0F5;*/
+}
+.table-td-val textarea{
+    /*background-color: #EDF0F5;*/
+}
+.table-td-val select{
+    /*background-color: #EDF0F5;*/
+}
+.table-td-val radio{
+    /*background-color: #EDF0F5;*/
+}
+.table-details{
+    height: 42px;
+}
+.table-details-type2{
+    /*height: 30px;*/
+}
+.read-only-color{
+    background: #b8b8b8;
+}
+/*表格样式 end*/
