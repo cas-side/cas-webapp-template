@@ -6,7 +6,7 @@
     <groupId>com.github.jpcui</groupId>
     <artifactId>cas-webapp-template</artifactId>
     <packaging>jar</packaging>
-    <version>1.0</version>
+    <version>5.3.x</version>
 
     <build>
         <finalName>cas</finalName>
