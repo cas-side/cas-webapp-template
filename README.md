@@ -10,6 +10,6 @@ CAS Webapp Template
 
 ## change list
 
-- 默认 http，没有使用 https，端口
+- 默认 http，没有使用 https，端口: 8080
 
 
