@@ -6,7 +6,7 @@
     <groupId>com.github.cas-side</groupId>
     <artifactId>cas-webapp-template</artifactId>
     <packaging>jar</packaging>
-    <version>5.3.x</version>
+    <version>5.3.11</version>
 
     <scm>
         <url>https://github.com/cas-side/cas-webapp-template</url>
