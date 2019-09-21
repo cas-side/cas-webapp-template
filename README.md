@@ -1,7 +1,8 @@
 CAS Webapp Template
 ============================
 
-## usage
+代替 [cas-overlay-template](https://github.com/apereo/cas-overlay-template)，
+直接以maven依赖引入：
 
 ```xml
 <dependency>
