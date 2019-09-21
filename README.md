@@ -1,6 +1,8 @@
 CAS Webapp Template
 ============================
 
+## usage
+
 ```xml
 <dependency>
     <groupId>com.github.cas-side</groupId>
