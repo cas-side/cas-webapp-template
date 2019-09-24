@@ -7,6 +7,25 @@
     <artifactId>cas-webapp-template</artifactId>
     <packaging>jar</packaging>
     <version>5.3.11</version>
+    <name>cas-webapp-template</name>
+    <description>cas-webapp-template</description>
+    <url>https://github.com/cas-side/cas-webapp-template</url>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>jpcui</id>
+            <url>https://github.com/JPCui</url>
+            <email>624498030@qq.com</email>
+        </developer>
+    </developers>
 
     <scm>
         <url>https://github.com/cas-side/cas-webapp-template</url>
