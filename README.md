@@ -2,7 +2,9 @@ CAS Webapp Template
 ============================
 
 代替 [cas-overlay-template](https://github.com/apereo/cas-overlay-template)，
-直接以maven依赖引入：
+在你的SpringBoot项目中执行下列操作：
+
+- 添加maven依赖
 
 ```xml
 <dependency>
@@ -10,6 +12,12 @@ CAS Webapp Template
     <artifactId>cas-webapp-template</artifactId>
     <version>5.3.11</version>
 </dependency>
+```
+
+- 设置`scanBasePackages`
+
+```java
+@SpringBootApplication(scanBasePackages = {"org.apereo"})
 ```
 
 ## change list
